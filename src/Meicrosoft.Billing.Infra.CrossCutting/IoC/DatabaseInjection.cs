@@ -9,7 +9,7 @@ namespace Meicrosoft.Billing.Infra.CrossCutting.IoC
     {
         public static void AddDatabaseInjection(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<OrderContext>(options => options.UseSqlServer(configuration.GetConnectionString("OrderConnnection")));
+            services.AddDbContext<OrderContext>(options => options.UseSqlServer(configuration.GetConnectionString("OrderConnection")));
         }
     }
 }
