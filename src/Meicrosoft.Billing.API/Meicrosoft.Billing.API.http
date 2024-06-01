@@ -1,0 +1,6 @@
+@Meicrosoft.Billing.API_HostAddress = http://localhost:5096
+
+GET {{Meicrosoft.Billing.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
