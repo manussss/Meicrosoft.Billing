@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Meicrosoft.Billing.Application\Meicrosoft.Billing.Application.csproj" />
+    <ProjectReference Include="..\Meicrosoft.Billing.Domain\Meicrosoft.Billing.Domain.csproj" />
+    <ProjectReference Include="..\Meicrosoft.Billing.Infra.CrossCutting\Meicrosoft.Billing.Infra.CrossCutting.csproj" />
   </ItemGroup>
 
 </Project>
