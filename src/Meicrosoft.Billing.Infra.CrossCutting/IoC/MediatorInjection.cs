@@ -8,7 +8,7 @@ namespace Meicrosoft.Billing.Infra.CrossCutting.IoC
     {
         public static void AddMediatorInjection(this IServiceCollection services)
         {
-            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(CreateOrderCommand).GetType().Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(typeof(CreateOrderCommand).Assembly));
         }
     }
 }
