@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meicrosoft.Billing.Infra", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meicrosoft.Billing.Infra.CrossCutting", "src\Meicrosoft.Billing.Infra.CrossCutting\Meicrosoft.Billing.Infra.CrossCutting.csproj", "{066208D6-6BA5-4C8E-A898-E5007B66A435}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meicrosoft.Billing.IntegrationTests", "tests\Meicrosoft.Billing.IntegrationTests\Meicrosoft.Billing.IntegrationTests.csproj", "{25BD924F-803D-4EA0-8157-3016EB36F8DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{066208D6-6BA5-4C8E-A898-E5007B66A435}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{066208D6-6BA5-4C8E-A898-E5007B66A435}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{066208D6-6BA5-4C8E-A898-E5007B66A435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25BD924F-803D-4EA0-8157-3016EB36F8DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25BD924F-803D-4EA0-8157-3016EB36F8DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25BD924F-803D-4EA0-8157-3016EB36F8DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25BD924F-803D-4EA0-8157-3016EB36F8DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{1DFD7095-1823-498E-B375-A4A85F1CE54C} = {55E98C7A-9A93-4AF2-8264-E29C94FFE3EB}
 		{73231C5B-5AFC-4A0B-B370-D909F671BCEA} = {55E98C7A-9A93-4AF2-8264-E29C94FFE3EB}
 		{066208D6-6BA5-4C8E-A898-E5007B66A435} = {55E98C7A-9A93-4AF2-8264-E29C94FFE3EB}
+		{25BD924F-803D-4EA0-8157-3016EB36F8DE} = {43ABA79B-12B7-458C-83DD-28A44889FB87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D970CC4-695F-42C0-A413-8660EADF9D56}
