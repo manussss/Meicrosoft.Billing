@@ -1,14 +1,17 @@
+using Meicrosoft.Billing.Application.Profiles;
 using Meicrosoft.Billing.Infra.CrossCutting.IoC;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDatabaseInjection(builder.Configuration);
 builder.Services.AddMediatorInjection();
 builder.Services.AddRepositoryInjection();
+builder.Services.AddAutoMapper(typeof(OrderProfile));
 
 var app = builder.Build();
 
