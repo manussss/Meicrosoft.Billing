@@ -6,9 +6,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddRepositoryInjection();
 builder.Services.AddDatabaseInjection(builder.Configuration);
 builder.Services.AddMediatorInjection();
+builder.Services.AddRepositoryInjection();
 
 var app = builder.Build();
 
